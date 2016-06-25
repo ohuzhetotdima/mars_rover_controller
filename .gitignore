@@ -5,6 +5,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+output.txt
 
 # JetBrains
 .idea

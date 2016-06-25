@@ -6,14 +6,14 @@ module MarsRover
 
       init_plateau
 
-      while !input_f.eof?
+      while !@input_f.eof?
         process_rover
       end
     end
 
     private
 
-    def init_plateau(str)
+    def init_plateau
       max_coords = @input_f.readline.split(/\s+/)
       @plateau   = MarsRover::Plateau.new(max_coords)
     end
