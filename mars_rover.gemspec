@@ -9,8 +9,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['ohuzhetotdima@gmail.com']
   spec.summary       = %q{Mars Rover movement controller for NASA}
   spec.description   = %q{Small application to control movement of NASA rovers}
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = `git ls-files`.split($\)
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.executables   = ['mars_rover']
   spec.require_paths = ['lib']
 
   spec.metadata['allowed_push_host'] = '' # we don't want to push gem to rubygems
